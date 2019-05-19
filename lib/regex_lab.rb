@@ -22,7 +22,10 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   end
 end
 
-def valid_phone_number?(phone)
-  new_array = phone.map { |number| number.gsub(/[^\d]/, '') }
-  new_array.all? { |element| element.length == 10 }
-end
+
+
+
+# def valid_phone_number?(phone)
+#   new_array = phone.map { |number| number.gsub(/[^\d]/, '') }
+#   new_array.all? { |element| element.length == 10 }
+# end
