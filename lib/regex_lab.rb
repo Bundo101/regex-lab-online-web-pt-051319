@@ -25,6 +25,7 @@ end
 
 
 
+# this version is for an array of numbers being passed in
 # def valid_phone_number?(phone)
 #   new_array = phone.map { |number| number.gsub(/[^\d]/, '') }
 #   new_array.all? { |element| element.length == 10 }
