@@ -24,13 +24,5 @@ end
 
 def valid_phone_number?(phone)
   new_array = phone.map { |number| number.gsub(/[^\d]/, '') }
-  total = 0
-  new_array.each do |element|
-    total += element.length
-  end
-  if total / new_array.length == 10
-    true
-  else
-    false
-  end
+  new_array.all? { |element| element.length == 10 }
 end
