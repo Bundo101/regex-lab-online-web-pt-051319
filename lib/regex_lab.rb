@@ -22,7 +22,13 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   end
 end
 
-
+def valid_phone_number?(phone)
+  if phone.gsub(/[^\d]/, '').length == 10
+    true
+  else
+    false
+  end 
+end
 
 
 # this version is for an array of numbers being passed in
